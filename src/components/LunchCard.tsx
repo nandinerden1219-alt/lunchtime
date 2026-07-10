@@ -30,38 +30,36 @@ export const LunchCard = ({ agentNames }: { agentNames: string[] }) => {
     <button
       key={name}
       className="
-        rounded-2xl
+        rounded-xl
         bg-white/85
         backdrop-blur-md
-        shadow-lg
-        hover:shadow-xl
+        shadow-md
+        hover:shadow-lg
         hover:scale-[1.03]
         transition-all
         duration-200
-        py-5
-        px-4
+        py-2
+        px-3
         border border-white/30
       "
     >
-      <p className="text-sm text-gray-500 mb-2">{lunchTime[index]}</p>
-      <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
+      <p className="text-xs text-gray-500 mb-0.5">{lunchTime[index]}</p>
+      <h3 className="text-sm font-semibold text-gray-800">{name}</h3>
     </button>
   );
 
   return (
     <main className="min-h-screen bg-[url('/background.webp')] bg-cover bg-center">
-      <div className="w-full h-screen flex">
-        <section className="w-1/2 flex items-center justify-center p-8">
-          <div className="grid grid-cols-2 gap-5 w-full max-w-xl">
-            {leftNames.map((name, index) => renderCard(name, index))}
-          </div>
-        </section>
+      <div className="w-full h-screen flex justify-between p-50 pt-20">
+        {/* Left */}
+        <div className="grid grid-cols-2 gap-5 h-fit">
+          {leftNames.map((name, index) => renderCard(name, index))}
+        </div>
 
-        <section className="w-1/2 flex items-center justify-center p-10">
-          <div className="grid grid-cols-2 gap-5 w-full max-w-xl">
-            {rightNames.map((name, index) => renderCard(name, index + half))}
-          </div>
-        </section>
+        {/* Right */}
+        <div className="grid grid-cols-2 gap-5 h-fit">
+          {rightNames.map((name, index) => renderCard(name, index + half))}
+        </div>
       </div>
     </main>
   );
