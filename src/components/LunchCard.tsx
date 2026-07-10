@@ -1,25 +1,27 @@
 export const LunchCard = ({ agentNames }: { agentNames: string[] }) => {
   const lunchTime = [
-    "11:00 - 11:30",
-    "11:00 - 11:30",
-    "11:00 - 11:30",
-    "11:00 - 11:30",
-    "11:35 - 12:05",
-    "11:35 - 12:05",
-    "11:35 - 12:05",
-    "11:35 - 12:05",
-    "12:10 - 12:40",
-    "12:10 - 12:40",
-    "12:10 - 12:40",
-    "12:10 - 12:40",
-    "12:45 - 13:15",
-    "12:45 - 13:15",
-    "12:45 - 13:15",
-    "12:45 - 13:15",
-    "13:20 - 13:50",
-    "13:20 - 13:50",
-    "13:20 - 13:50",
-    "13:20 - 13:50",
+    "16:00 - 16:30",
+    "16:00 - 16:30",
+    "16:00 - 16:30",
+    "16:30 - 17:00",
+    "16:30 - 17:00",
+    "16:30 - 17:00",
+    "17:00 - 17:30",
+    "17:00 - 17:30",
+    "17:00 - 17:30",
+    "17:30 - 18:00",
+    "17:30 - 18:00",
+    "17:30 - 18:00",
+    "18:00 - 18:30",
+    "18:00 - 18:30",
+    "18:00 - 18:30",
+    "18:30 - 19:00",
+    "18:30 - 19:00",
+    "18:30 - 19:00",
+    "19:00 - 19:30",
+    "19:00 - 19:30",
+    "19:00 - 19:30",
+    "19:00 - 19:30",
   ];
 
   const half = Math.ceil(agentNames.length / 2);
@@ -49,8 +51,8 @@ export const LunchCard = ({ agentNames }: { agentNames: string[] }) => {
   );
 
   return (
-    <main className="min-h-screen bg-[url('/background.webp')] bg-cover bg-center">
-      <div className="w-full h-screen flex justify-between p-50 pt-20">
+    <main className="min-h-screen bg-[url('/background.jpg')] bg-cover bg-center ">
+      <div className="w-full h-screen flex items-end justify-between gap-20 px-50 pb-20">
         {/* Left */}
         <div className="grid grid-cols-2 gap-5 h-fit">
           {leftNames.map((name, index) => renderCard(name, index))}
