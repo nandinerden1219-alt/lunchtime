@@ -51,8 +51,8 @@ export const LunchCard = ({ agentNames }: { agentNames: string[] }) => {
   );
 
   return (
-    <main className="min-h-screen bg-[url('/background.jpg')] bg-cover bg-center ">
-      <div className="w-full h-screen flex items-end justify-between gap-20 px-50 pb-20">
+    <main className="min-h-screen bg-[url('/download.png')] bg-cover bg-center ">
+      <div className="w-full h-screen flex justify-between gap-20 p-50 pb-20">
         {/* Left */}
         <div className="grid grid-cols-2 gap-5 h-fit">
           {leftNames.map((name, index) => renderCard(name, index))}
