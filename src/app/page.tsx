@@ -1,12 +1,12 @@
 import { LunchCard } from "@/components/LunchCard";
 export default function Home() {
   const AgentNames = [
+    "Ариун",
     "Энхүүш",
     "Уянга",
     "Маралгуа",
     "Хандаа",
     "Бат-Очир",
-    "Ариун",
     "Энхмаа",
     "Нандин-Эрдэнэ.Т",
     "Номио",
